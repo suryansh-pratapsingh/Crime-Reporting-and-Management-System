@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Management System</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="brand">
+            <img src="l.png" alt="Logo">
+            Crime Management System
+        </div>
+        <ul>
+            <li><a href="users_dashboard.php">Profile</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="crime_report.php">Report</a></li>
+            <li><a href="login.php">Login</a></li>
+        </ul>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to Crime Management System</h1>
+        <p>Empowering citizens to report crimes and helping authorities manage them efficiently.</p>
+        <a href="crime_report.php" class="btn-login">Report Crime</a>
+        <a href="Emergency.php" class="btn-emergency">Emergency Button</a>
+    </div>
+
+    <div class="statistics">
+        <h2>Crime Statistics</h2>
+        <?php include 'statistics.php'; ?>
+        <a href="s.php" class="btn-view-more">View More</a>
+    </div>
+
+    <div class="features">
+        <h2>Features of the System</h2>
+        <p>- Report crimes and provide detailed information.</p>
+        <p>- Admin dashboard with a heatmap of crime density across India.</p>
+        <p>- Automatic email notifications to higher authorities.</p>
+        <p>- Filtering and sorting of crime reports based on various criteria.</p>
+        <p>- AI chatbot to assist users.</p>
+        <p>- Emergency button for women, notifying authorities and guardians with location sharing.</p>
+    </div>
+
+    <footer>
+        This project is Developed by Suryansh Pratap Singh and Tanisha Agrawal under the guidance of Narender Pal Sir.
+    </footer>
+
+</body>
+</html>

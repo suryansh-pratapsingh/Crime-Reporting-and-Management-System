@@ -1,0 +1,220 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+html, body {
+    height: 100%;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #837a73;
+}
+
+/* Page Titles */
+h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Form Styling */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #817d7a;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #969391;
+    color: #fff;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-top: auto; /* This ensures the footer is pushed to the bottom */
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.logout-btn {
+    background-color: #837b7b;
+    color: #fff;
+}
+
+.logout-btn:hover {
+    background-color: #857575;
+}
+
+/* Signup and Login Container */
+.signup-container, .login-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.signup-container h1, .login-container h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.signup-container input, .login-container input,
+.signup-container textarea, .login-container textarea,
+.signup-container select, .login-container select,
+.signup-container button, .login-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.signup-container button, .login-container button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-container button:hover, .login-container button:hover {
+    background: #817d7a;
+}
+
+/* Already Have an Account / Go to Signup link */
+.signup-container p, .login-container p {
+    margin-top: 10px;
+}
+
+.signup-container a, .login-container a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+.signup-container a:hover, .login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 1.2rem;
+    }
+
+    .signup-container, .login-container {
+        width: 90%;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+}

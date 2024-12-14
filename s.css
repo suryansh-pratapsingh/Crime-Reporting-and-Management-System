@@ -1,0 +1,130 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css?family=Exo:100');
+
+/* Background settings */
+body {
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+    color: #333;
+    background: url("data:image/png;base64,iVBORw0KGgo...") repeat 0 0;
+    animation: bg-scrolling-reverse 0.92s infinite linear;
+}
+
+@keyframes bg-scrolling-reverse {
+    100% { background-position: 50px 50px; }
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar .brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-login, .btn-emergency, .btn-view-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: 700;
+}
+
+.btn-login:hover, .btn-view-more:hover {
+    background-color: #0a0909;
+}
+
+.btn-emergency {
+    background-color: #d9534f;
+}
+
+.btn-emergency:hover {
+    background-color: #c9302c;
+}
+
+/* Statistics and Features */
+.statistics, .features {
+    margin: 50px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.statistics h2, .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.statistics p, .features p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 50px;
+    font-weight: 800;
+}
