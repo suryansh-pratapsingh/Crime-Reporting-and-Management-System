@@ -1,4 +1,4 @@
-# 📊 Crime Management System – Statistics Page
+# 📊 Crime Management System – 
 
 This project is an integrated statistics dashboard for the **Crime Management System**, aimed at visualizing crime data for better monitoring and quick decision-making. It uses `Chart.js` to display graphical representations of real-time crime reports directly fetched from the MySQL database.
 
